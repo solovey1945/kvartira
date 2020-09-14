@@ -1,0 +1,82 @@
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/nullstyle';
+
+body {
+    background-image: url(../img/page-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.body-overflow {
+    overflow: hidden;
+}
+
+.container  {
+    max-width: $container-break !important;
+}
+
+.btn {
+    box-shadow: 0 0 46px rgba(214, 191, 123, 0.35);
+    background-color: $color-def;
+    border-radius: 25px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 45px;
+    transition: all .2s ease-in;
+    &--gray {
+        background-color: #e2e2e2;
+        color: #171717;
+        &:hover {
+            background-color: darken(#e2e2e2, 7) !important;
+        }
+    }
+    &:hover {
+        background-color: darken($color-def, 7);
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    position: relative;
+    &--center {
+        text-align: center;
+    }
+    span {
+        color: $color-def;
+        font-weight: 700;
+    }
+}
+
+.line {
+    width: 73px;
+    height: 5px;
+    background-color: $color-def;
+    border-radius: 25px;
+    margin-top: 30px;
+    &--center {
+        margin: 30px auto 0 auto;
+    }
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+@import 'blocks/header';
+@import 'blocks/catalog';
+@import 'blocks/blog';
+@import 'blocks/sponsors';
+@import 'blocks/video';
+@import 'blocks/footer';
+@import 'blocks/slider';
+@import 'blocks/modals';
+@import 'utils/media';
+
+
+
+

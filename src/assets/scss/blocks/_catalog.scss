@@ -1,0 +1,18 @@
+.catalog {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    &__desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 25px 0;
+    }
+    &__btn {
+        padding: 0 15px;
+    }
+    &__img {
+        width: 100%;
+        position: absolute;
+        top: -25px;
+    }
+}

@@ -1,0 +1,16 @@
+.sponsors {
+    background-color: #f5f5f5;
+    padding: 70px 0;
+    .sponsor {
+        margin-top: 18px;
+        a {
+            display: block;
+            .sponsors__img {
+                width: 100%;
+                object-fit: none;
+                height: 100%;
+                margin-top: initial;
+            }
+        }
+    }
+}

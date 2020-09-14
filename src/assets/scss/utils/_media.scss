@@ -1,0 +1,252 @@
+@media screen and (max-width: 1250px) {
+    .header {
+        height: 625px;
+        .header__slider {
+            .header__content {
+                padding-top: 20px;
+                .header__title {
+                    font-size: 28px;
+                    line-height: 60.55px;
+                }
+                .header__subtitle {
+                    max-width: 500px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+    .video__content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        &__top {
+            .header__burgmenu {
+                display: block;
+                width: 21px;
+                height: 20px;
+                z-index: 21;
+                padding: 20px;
+        
+                span {
+                    background-color: #fff;
+                    width: 21px;
+                    height: 3px;
+                    border-radius: 25px;
+                    position: absolute;
+                    left: calc(50% - 9px);
+                    top: calc(50% - 1.5px);
+                    border-radius: 25px;
+                }
+        
+                &::before,
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 21px;
+                    height: 3px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: calc(50% - 9px);
+                    top: calc(50% - 1.5px);
+                    border-radius: 25px;
+                    transition: transform 0.2s ease-in, margin-top 0.2s linear 0.2s;
+                }
+        
+                &::before {
+                    margin-top: -6px;
+                }
+        
+                &::after {
+                    margin-top: 6px;
+                }
+                &.burg--active {
+                    transition: .2s ease;
+                    z-index: 21;
+                    span {
+                        display: none;
+                        background-color: #000;
+                    }
+                    
+                    &::after, &::before {
+                        margin-top: 0;
+                        background-color: #000;
+                    }
+                    &::after {
+                        transform: rotate(45deg);
+                    }
+                    &::before {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        &__elements {
+            display: none;
+        }
+    }
+    .catalog__img {
+        position: initial;
+        margin-top: 20px;
+    }
+    .blog__content .articles .article__img img {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    .blog__content .articles .article__info {
+        width: 100%;
+    }
+    .footer {
+        &__copy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__phone {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__btn {
+            float: none;
+            margin: 20px auto 0 auto;
+            display: block;
+        }
+        &__menu {
+            text-align: center;
+            margin: 15px 0;
+        }
+    }
+    .header__top .header__navbar .header__menu {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: rgba(#fff, .9);
+        opacity: 0;
+        transition: all .2s ease-in;
+        &--active {
+            opacity: 1;
+        }
+    }
+    .header__top .header__navbar .header__menu .header__item a {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__top {
+        .header__navbar {
+            display: none;
+            &--active {
+                display: block;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .hide-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .header {
+        background-image: url(../img/header-bg-mobile.webp);
+        // height: 456px;
+        height: 562px;
+        &__top {
+            .header__logo-top {
+                font-size: 25px;
+            }
+            .header__logo-bottom {
+                font-size: 12px;
+            }
+            .header__phone {
+                .header__tel {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+    .header .header__slider .header__content .header__title {
+        font-size: 24px;
+        line-height: 30.55px;
+    }
+    .header .header__slider .header__content .header__subtitle {
+        font-size: 13px;
+        padding: 5px 0 20px 0;
+    }
+    .header__slider{
+        text-align: center;
+        margin-top: 20px;
+        .slick-dots {
+            flex-direction: row;
+            top: 100%;
+            right: 50%;
+            transform: translateX(50%);
+            width: 20%;
+        }
+    } 
+    .blog__content .articles .article__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .video__slider {
+        padding: 0;
+        .video__slide {
+            margin-bottom: 20px;
+        }
+        
+        .slick-arrow {
+            top: 95%;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .modal__catalog .modal__body {
+        width: 100%;
+    }
+    .modal__request .modal__body {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1250px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+}
+
+@media(min-width: 482px) and (max-width: 767px) {
+}
+
+@media(min-width: 320px) and (max-width: 481px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1540px) {
+}
+
+@media screen and (max-height: 740px) {
+}
+
+@media screen and (max-height: 568px) {
+}
